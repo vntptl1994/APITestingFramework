@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportListener"/>
+    </listeners>
+    <test verbose="2"  name="APITestingFramework"><classes><class name="Tests.UserTests">
+        <methods><include name="testPostUser"/>
+            <include name="getUser"/>
+            <include name="updateUser"/>
+            <include name="deleteUser"/>
+        </methods></class></classes></test></suite>
